@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Торт на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gallery-page">
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">🎂 Торт на заказ</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="about.html">О кондитере</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-hero" id="galleryHero">
+            <div class="container">
+                <a href="catalog.html" class="back-link">← Все категории</a>
+                <h1 id="galleryTitle">Галерея</h1>
+                <p id="gallerySubtitle">Все работы этой категории</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="photo-grid" id="photoGrid">
+                    <!-- Фотографии добавляются скриптом -->
+                </div>
+                <div id="emptyMessage" style="display:none; text-align:center; padding: 60px 20px;">
+                    <div style="font-size: 4rem; margin-bottom: 20px;">🍰</div>
+                    <h3>Фотографии скоро появятся!</h3>
+                    <p>Мы как раз готовим новые работы для этой категории.</p>
+                    <a href="contacts.html" class="btn" style="margin-top: 20px; display: inline-block;">Заказать торт</a>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="contacts.html" class="btn btn-gradient">Хочу такой же торт!</a>
+                    <a href="catalog.html" class="btn btn-outline">Вернуться в каталог</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Лайтбокс для просмотра фото -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Торт на заказ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

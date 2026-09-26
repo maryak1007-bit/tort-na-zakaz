@@ -369,3 +369,274 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==================== ЯРКИЙ СОВРЕМЕННЫЙ СТИЛЬ ==================== */
+
+/* Карточки категорий */
+.categories-section {
+    padding: 70px 0;
+    background: linear-gradient(180deg, #fff9f5 0%, #fff3ec 100%);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.category-card {
+    position: relative;
+    border-radius: 24px;
+    padding: 26px 22px;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: fadeUp 0.6s ease both;
+}
+
+.category-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.category-card::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -40%;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+    pointer-events: none;
+}
+
+.category-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    line-height: 1.3;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.category-card .cat-emoji {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));
+}
+
+.category-card .cat-preview {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,0.85);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    margin: 14px auto 18px;
+    align-self: center;
+    transition: transform 0.4s ease;
+}
+
+.category-card:hover .cat-preview {
+    transform: scale(1.12) rotate(4deg);
+}
+
+.category-card .btn-more {
+    display: inline-block;
+    margin-top: auto;
+    align-self: center;
+    background: rgba(255, 255, 255, 0.95);
+    color: #4a3728;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 26px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.category-card .btn-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    background: #fff;
+}
+
+/* Цвета карточек категорий */
+.cat-domashnie      { background: linear-gradient(135deg, #ff9a8b 0%, #ff6a88 100%); }
+.cat-mussovye       { background: linear-gradient(135deg, #d4a373 0%, #b08968 100%); }
+.cat-yagodnye       { background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%); }
+.cat-bento          { background: linear-gradient(135deg, #ffd166 0%, #f4a261 100%); }
+.cat-detskie        { background: linear-gradient(135deg, #ff8fb1 0%, #f72585 100%); }
+.cat-dlya-devochek  { background: linear-gradient(135deg, #f78ca0 0%, #f9748f 50%, #fd9853 100%); }
+.cat-dlya-malchikov { background: linear-gradient(135deg, #4facfe 0%, #3a86c8 100%); }
+.cat-muzhskie       { background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); }
+.cat-svadebnye      { background: linear-gradient(135deg, #a18cd1 0%, #7b5ea7 100%); }
+.cat-kapkeyki       { background: linear-gradient(135deg, #ffacc7 0%, #ff8fab 100%); }
+.cat-sertifikaty    { background: linear-gradient(135deg, #e9c46a 0%, #d4a373 100%); }
+.cat-foto-konditera { background: linear-gradient(135deg, #f6a5c0 0%, #e56b9c 100%); }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Кнопки */
+.btn-gradient {
+    background: linear-gradient(135deg, #ff6a88, #ff9a8b) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-outline {
+    background: transparent !important;
+    border: 2px solid #d4a574 !important;
+    color: #d4a574 !important;
+    margin-left: 12px;
+}
+
+.btn, .btn-gradient, .btn-outline {
+    border-radius: 50px;
+}
+
+/* Страница галереи категории */
+.gallery-hero {
+    padding: 70px 0 50px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88);
+}
+
+.gallery-hero h1 {
+    font-size: 2.6rem;
+    margin: 12px 0 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.gallery-hero p {
+    font-size: 1.15rem;
+    opacity: 0.95;
+}
+
+.back-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.photo-grid-item {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    cursor: pointer;
+    animation: fadeUp 0.6s ease both;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    aspect-ratio: 1 / 1;
+    background: #fbe9df;
+}
+
+.photo-grid-item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+}
+
+.photo-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.photo-grid-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Лайтбокс */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 16px;
+    box-shadow: 0 10px 60px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.lightbox-close:hover {
+    transform: rotate(90deg);
+}
+
+/* Адаптив: категории и галерея */
+@media (max-width: 900px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-hero h1 {
+        font-size: 1.9rem;
+    }
+    .btn-outline {
+        margin-left: 0;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
