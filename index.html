@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Торт на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">🎂 Торт на заказ</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О кондитере</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Торты на заказ с душой</h1>
+                <p>Индивидуальные торты для ваших праздников и особых моментов</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="catalog.html" class="btn">Смотреть каталог</a>
+                    <a href="contacts.html" class="btn" style="background: transparent; border: 2px solid #d4a574; color: #d4a574;">Связаться со мной</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Категории тортов</h2>
+                <p style="text-align: center; font-size: 1.15rem; max-width: 700px; margin: 0 auto;">
+                    Выберите категорию — в каждой вас ждут вкуснейшие торты на любой праздник 🎉
+                </p>
+                <div class="categories-grid">
+                    <div class="category-card cat-domashnie" style="animation-delay: 0.05s;">
+                        <div class="cat-emoji">🏠</div>
+                        <h3>Торты домашние</h3>
+                        <img class="cat-preview" src="images/domashnie/1.jpg" alt="Домашний торт">
+                        <a href="gallery.html?category=domashnie" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-mussovye" style="animation-delay: 0.1s;">
+                        <div class="cat-emoji">🌰</div>
+                        <h3>Торты муссовые с ореховой начинкой</h3>
+                        <img class="cat-preview" src="images/mussovye/1.jpg" alt="Муссовый торт">
+                        <a href="gallery.html?category=mussovye" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-yagodnye" style="animation-delay: 0.15s;">
+                        <div class="cat-emoji">🍓</div>
+                        <h3>Торты с ягодной начинкой</h3>
+                        <img class="cat-preview" src="images/yagodnye/1.jpg" alt="Ягодный торт">
+                        <a href="gallery.html?category=yagodnye" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-bento" style="animation-delay: 0.2s;">
+                        <div class="cat-emoji">🍱</div>
+                        <h3>Торты Бенто</h3>
+                        <img class="cat-preview" src="images/bento/1.jpg" alt="Бенто торт">
+                        <a href="gallery.html?category=bento" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-detskie" style="animation-delay: 0.25s;">
+                        <div class="cat-emoji">🎈</div>
+                        <h3>Детские торты</h3>
+                        <img class="cat-preview" src="images/detskie/1.jpg" alt="Детский торт">
+                        <a href="gallery.html?category=detskie" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-dlya-devochek" style="animation-delay: 0.3s;">
+                        <div class="cat-emoji">👑</div>
+                        <h3>Торты для девочек</h3>
+                        <img class="cat-preview" src="images/dlya-devochek/1.jpg" alt="Торт для девочки">
+                        <a href="gallery.html?category=dlya-devochek" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-dlya-malchikov" style="animation-delay: 0.35s;">
+                        <div class="cat-emoji">🚗</div>
+                        <h3>Торты для мальчиков</h3>
+                        <img class="cat-preview" src="images/dlya-malchikov/1.jpg" alt="Торт для мальчика">
+                        <a href="gallery.html?category=dlya-malchikov" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-muzhskie" style="animation-delay: 0.4s;">
+                        <div class="cat-emoji">🥃</div>
+                        <h3>Мужские торты</h3>
+                        <img class="cat-preview" src="images/muzhskie/1.jpg" alt="Мужской торт">
+                        <a href="gallery.html?category=muzhskie" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-svadebnye" style="animation-delay: 0.45s;">
+                        <div class="cat-emoji">💍</div>
+                        <h3>Свадебные торты</h3>
+                        <img class="cat-preview" src="images/svadebnye/1.jpg" alt="Свадебный торт">
+                        <a href="gallery.html?category=svadebnye" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-kapkeyki" style="animation-delay: 0.5s;">
+                        <div class="cat-emoji">🧁</div>
+                        <h3>Капкейки и Трайфлы</h3>
+                        <img class="cat-preview" src="images/kapkeyki/1.jpg" alt="Капкейки">
+                        <a href="gallery.html?category=kapkeyki" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-sertifikaty" style="animation-delay: 0.55s;">
+                        <div class="cat-emoji">📜</div>
+                        <h3>Сертификаты</h3>
+                        <img class="cat-preview" src="images/sertifikaty/1.jpg" alt="Сертификаты кондитера">
+                        <a href="gallery.html?category=sertifikaty" class="btn-more">Подробнее</a>
+                    </div>
+                    <div class="category-card cat-foto-konditera" style="animation-delay: 0.6s;">
+                        <div class="cat-emoji">👩‍🍳</div>
+                        <h3>Фото Кондитера</h3>
+                        <img class="cat-preview" src="images/foto-konditera/1.jpg" alt="Фото кондитера">
+                        <a href="gallery.html?category=foto-konditera" class="btn-more">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают меня</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center;">
+                    <div style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🍰</div>
+                        <h3 style="color: #d4a574; margin-bottom: 15px;">Натуральные ингредиенты</h3>
+                        <p>Использую только свежие и качественные продукты без искусственных добавок</p>
+                    </div>
+                    <div style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🎨</div>
+                        <h3 style="color: #d4a574; margin-bottom: 15px;">Уникальный дизайн</h3>
+                        <p>Каждый торт создаётся индивидуально с учётом всех ваших пожеланий</p>
+                    </div>
+                    <div style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">⏰</div>
+                        <h3 style="color: #d4a574; margin-bottom: 15px;">Точно в срок</h3>
+                        <p>Гарантирую доставку торта точно к назначенному времени</p>
+                    </div>
+                    <div style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">💝</div>
+                        <h3 style="color: #d4a574; margin-bottom: 15px;">С любовью</h3>
+                        <p>Вкладываю душу в каждый торт, чтобы ваш праздник стал незабываемым</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: white;">
+            <div class="container">
+                <h2 class="section-title">Популярные торты</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="62967c80-8218-43e1-8fa1-4a6323ae21c5.jpg" alt="Торт с ягодами">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="88815eca-72fd-4f53-9a9a-f5fc357bd6e9.jpg" alt="Шоколадный торт">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="8cffd99b-f7aa-4c55-b439-1f293a5fc5ea.jpg" alt="Свадебный торт">
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="catalog.html" class="btn">Смотреть весь каталог</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Торт на заказ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
